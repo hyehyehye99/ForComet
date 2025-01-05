@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>글 관리</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 font-[&#39;Noto_Sans_KR&#39;]">
+    <div class="max-w-4xl mx-auto min-h-screen bg-white shadow-sm">
+        <header class="border-b border-gray-200">
+            <div class="flex items-center justify-between px-4 py-3">
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-gray-900 !rounded-button flex items-center">
+                        <span class="text-xl font-bold text-primary">For Comet</span>
+                    </button>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <a href="mypage.html" class="text-gray-700 hover:text-gray-900 !rounded-button relative flex items-center">
+                        <span class="text-gray-700 mr-2" id="user-id">#comet123</span>
+                        <i class="fas fa-user text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="px-4 py-6">
+            <div class="space-y-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-2xl font-bold">내 글 목록</h1>
+                    <a href="editor.html" class="ml-4 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-700 transition-all duration-200 flex items-center">
+                        <i class="fas fa-plus mr-2"></i>새 글 작성
+                    </a>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-4 border rounded-lg hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-medium mb-2">우리의 꿈</h2>
+                                <p class="text-gray-600 text-sm mb-2 line-clamp-2">내 어린 시절 우연히 들었던 멋진 못할 한마디 이 세상을 다 준다는 매혹적인 얘기...</p>
+                                <div class="text-gray-500 text-sm">2024.01.15 · 단어 164개 · 글자수 2,048자</div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 relative group" onclick="if(confirm('삭제하시겠습니까?')) { this.closest('.p-4.border').remove(); }">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 top-6 w-32 bg-white border rounded-lg shadow-lg py-1 z-10">
+                                <button class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100">
+                                    <i class="fas fa-trash-alt mr-2"></i>글 삭제
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 border rounded-lg hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-medium mb-2">봄날의 기억</h2>
+                                <p class="text-gray-600 text-sm mb-2 line-clamp-2">따스한 봄바람이 불어오던 그날, 벚꽃 잎이 흩날리는 거리를...</p>
+                                <div class="text-gray-500 text-sm">2024.01.10 · 단어 142개 · 글자수 1,856자</div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 relative group" onclick="if(confirm('삭제하시겠습니까?')) { this.closest('.p-4.border').remove(); }">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 top-6 w-32 bg-white border rounded-lg shadow-lg py-1 z-10">
+                                <button class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100">
+                                    <i class="fas fa-trash-alt mr-2"></i>글 삭제
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 border rounded-lg hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-medium mb-2">여름 밤의 추억</h2>
+                                <p class="text-gray-600 text-sm mb-2 line-clamp-2">반짝이는 별들이 수놓은 밤하늘 아래, 우리는 이야기를 나누었다...</p>
+                                <div class="text-gray-500 text-sm">2024.01.05 · 단어 156개 · 글자수 1,924자</div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 relative group" onclick="if(confirm('삭제하시겠습니까?')) { this.closest('.p-4.border').remove(); }">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 top-6 w-32 bg-white border rounded-lg shadow-lg py-1 z-10">
+                                <button class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100">
+                                    <i class="fas fa-trash-alt mr-2"></i>글 삭제
+                                </button>
+                            </div>
+                        </
